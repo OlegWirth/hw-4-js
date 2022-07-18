@@ -1,19 +1,22 @@
 
 //111111111111111111111111111111111111111
-document.write(`-----1-------------------- </br>`);
 
-let fruits = [1,2,3,4,5];
 
-document.write(`${fruits} </br></br>`);
+let arr1 = [1,2,3,4,5];
+for(let i = 0; i < arr1.length; i ++){
+    console.log(arr1[i]);
+    document.write(arr1[i]);
+}
 
 //22222222222222222222222222222222222
-document.write(`-----2-------------------- </br>`);
 
-let arr = [-2, -1, -3, 15, 0, -4, 2, -5, 9, -15, 0, 4, 5, -6, 10, 7];
 
-for(i = 0; i < arr.length; i++){
-  if(arr[i] > -10 && arr[i] < -3){
-    document.write(`${arr[i]} </br></br>`)
+let arr2 = [-2, -1, -3, 15, 0, -4, 2, -5, 9, -15, 0, 4, 5, -6, 10, 7];
+
+for(i = 0; i < arr2.length; i++){
+  if(arr2[i] > -10 && arr2[i] < -3){
+    document.write(arr2[i]);
+    console.log(arr2[i]);   
   }
 }
   //333333333333333333333333333333333333
