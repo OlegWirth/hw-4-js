@@ -73,7 +73,51 @@ arr_6.push('ADDed');
 console.log(arr_6);
 console.log(arr_6[arr_6.length-1]);
 
+/*8. Напишите ф-цию, которая рисует равнобедренный треугольник из
+звездочек:
 
+    
+  ***
+  *****
+ *******
+*********
+
+Кол-во рядов должно вводиться с клавиатуры. Доп., напишите такую же ф-
+цию, но которая выведет перевернутый треугольник.*/
+
+
+const createP = function(height){
+    for(let i = 1; i <= height; i++){
+
+        for(let k = 1; k <= height-i;k ++ ){
+            document.write('&ensp;');
+        }
+
+        for(let j = 1; j <= i+i-1; j++){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+}
+
+createP(25);
+
+-------------------------------------------
+    const createPRevert = function(height){
+    for(let i = height; i >= 1; i--){
+
+        for(let k = 1; k <= height-i;k ++ ){
+            document.write('&ensp;');
+        }
+
+        for(let j = 1; j <= i+i-1; j++){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+}
+
+createPRevert(25);
 
 
 
